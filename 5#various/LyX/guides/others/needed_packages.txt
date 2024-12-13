@@ -1,0 +1,14 @@
+zref.sty
+bidi.sty
+titlesec.sty
+relsize.sty
+esint.sty
+doublestroke.sty (include: dsfont.sty)
+
+enumitem.sty
+multirow.sty
+varwidth.sty
+cancel.sty
+framed.sty
+bigfoot.sty (include: suffix.sty)
+nomencl.sty

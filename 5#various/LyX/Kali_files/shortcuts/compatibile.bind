@@ -1,0 +1,348 @@
+Format 5
+
+
+##### MISSED #####
+
+### cua ###
+\bind "M-h k" "cut"
+\bind "M-e i" "font-ital"
+
+### menus ###
+\bind "M-e k" "layout Lemma"
+
+### design ###
+\bind "M-e M-comma" "layout Property"
+
+### symbols ###
+\bind "M-q v" "math-insert \\circ"
+
+
+##### DIFFERENCES ######
+
+### cua ###
+\bind "M-h j" "clipboard-paste-simple"
+# \bind "C-S-v" "clipboard-paste-simple"
+
+\bind "S-Return" "command-sequence math-mutate align; cell-forward; tabular-feature append-column; tabular-feature append-column; cell-forward"
+# \bind "S-Return" "paragraph-break"
+
+\bind "C-S-k" "char-right-select"
+# \bind "S-Right" "char-right-select"
+
+\bind "C-S-j" "char-left-select"
+# \bind "S-Left" "char-left-select"
+
+### menus ###
+\bind "M-e S-p" "layout Problem"
+\bind "M-e p" "layout Solution"
+# \bind "M-e p" "layout Problem"
+
+\bind "C-S-Up" "char-backward-select"
+# \bind "C-S-Up" "paragraph-up-select"
+
+\bind "M-e g" "layout Remark"
+# \bind "M-e r" "layout Remark"
+
+\bind "M-q q" "depth-decrement"
+# \bind "C-M-Right" "depth-decrement"
+
+\bind "M-r d" "dialog-show mathdelimiter"
+# \bind "C-d d" "dialog-show mathdelimiter"
+
+\bind "M-r p" "listing-insert"
+# \bind "M-r p" "newpage-insert newpage"
+
+\bind "M-r i" "inset-settings"
+# \bind "C-d s" "inset-settings"
+
+### environments ###
+\bind "M-m M-m" "math-insert \\tilde"
+\bind "M-m m" "math-insert \\tilde"
+# \bind "M-grave" "math-insert \\tilde"
+# \bind "M-m m" "command-sequence math-insert \\left[\\begin{array}{ccc}\\\\\\\\\\\\\\end{array}\\right]; word-backward; char-right; char-right; up"
+
+\bind "M-m f" "math-insert \\nicefrac"
+# \bind "C-M-f" "math-insert \\nicefrac"
+
+\bind "M-i S-parenleft" "math-delim ( ]"
+# \bind "M-S-parenleft" "math-delim ( ]"
+
+\bind "M-i minus" "command-sequence word-left-select; math-insert \\left.\\right|;escape; math-subscript"
+# \bind "M-i minus" "math-insert \\setminus"
+
+\bind "M-e b" "math-insert \\boxed"
+# \bind "M-m x" "math-insert \\boxed"
+
+\bind "M-q backslash" "math-insert \\left\\Vert \\right\\Vert"
+# \bind "M-m backslash" "math-insert \\left\\Vert \\right\\Vert"
+
+\bind "M-d 8" "command-sequence math-superscript; math-insert \\ast; escape"
+# \bind "C-M-8" "command-sequence math-superscript; math-insert \\ast; escape"
+
+\bind "M-r t" "math-insert \\tag"
+# \bind "M-r t" "command-sequence paragraph-params \align center; tabular-insert 4 3; tabular-feature delete-row"
+
+\bind "M-d 2" "command-sequence math-superscript; math-insert \\dagger; escape"
+# \bind "C-M-minus" "command-sequence math-superscript; math-insert \\dagger; escape"
+
+\bind "M-S-f" "math-insert \\nicefrac"
+# \bind "C-M-f" "math-insert \\nicefrac"
+
+\bind "M-s Right" "math-insert \\overrightarrow"
+# \bind "M-m Right" "math-insert \\overrightarrow"
+
+\bind "M-s Left" "math-insert \\overleftarrow"
+# \bind "M-m Left" "math-insert \\overleftarrow"
+
+### symbols ###
+\bind "M-8" "math-insert \\ast"
+\bind "M-m 8" "math-insert \\infty"
+\bind "M-w 8" "math-insert \\infty"
+\bind "M-q 8" "math-insert \\infty"
+# \bind "M-8" "math-insert \\infty"
+
+\bind "M-m S-asciitilde" "math-insert \\cong"
+# \bind "M-m S-asciitilde" "math-insert \\widetilde"
+
+\bind "M-m 9" "math-insert \\otimes"
+# \bind "M-y 8" "math-insert \\otimes"
+
+\bind "M-m 0" "math-insert \\oplus"
+# \bind "M-y equal" "math-insert \\oplus"
+
+\bind "M-m M-S-plus" "math-insert \\mp"
+# \bind "C-M-pminus" "math-insert \\mp"
+
+\bind "M-i S-i" "command-sequence math-insert \\ni; char-left"
+\bind "M-i M-i" "math-insert \\notin"
+# \bind "M-i S-i" "math-insert \\notin"
+
+\bind "M-i M-p" "math-insert \\perp"
+# \bind "M-i M-p" "math-insert \\supset"
+
+\bind "M-i t" "math-insert \\aleph"
+# \bind "M-i C-t" "math-insert \\aleph"
+
+\bind "M-i S-b" "math-insert \\subset"
+# \bind "M-i M-b" "math-insert \\subset"
+
+\bind "M-i S-p" "math-insert \\supset"
+# \bind "M-i M-p" "math-insert \\supset"
+
+\bind "M-i a" "math-insert \\land"
+# \bind "M-l a" "math-insert \\land"
+
+\bind "M-k o" "math-insert \\lor"
+\bind "M-i o" "math-insert \\lor"
+# \bind "M-l o" "math-insert \\lor"
+
+\bind "M-k n" "math-insert \\lnot"
+# \bind "M-l n" "math-insert \\lnot"
+
+\bind "M-i S-a" "math-insert \\bigwedge"
+# \bind "M-l S-a" "math-insert \\bigwedge"
+
+\bind "M-k S-o" "math-insert \\bigvee"
+\bind "M-i S-o" "math-insert \\bigvee"
+# \bind "M-l S-o" "math-insert \\bigvee"
+
+\bind "M-k S-a" "math-insert \\bigwedge"
+# \bind "M-l S-a" "math-insert \\bigwedge"
+
+\bind "M-y comma" "math-insert \\triangleleft"
+\bind "M-i comma" "math-insert \\trianglelefteq"
+# \bind "M-y comma" "math-insert \\trianglelefteq"
+
+\bind "M-i period" "math-insert \\trianglerighteq"
+# \bind "M-y period" "math-insert \\trianglerighteq"
+
+\bind "C-M-comma" "math-insert \\leq"
+# \bind "M-comma" "math-insert \\leq"
+
+\bind "C-M-period" "math-insert \\geq"
+# \bind "M-period" "math-insert \\geq"
+
+\bind "M-i C-M-p" "math-insert \\parallel"
+# \bind "M-g p" "math-insert \\parallel"
+
+\bind "M-m S-u" "command-sequence math-insert \\sum_{n=0}^{\\infty}; escape"
+# \bind "M-S-u 0" "command-sequence math-insert \\sum_{n=0}^{\\infty}; escape"
+
+\bind "M-w 4" "math-insert \\Square"
+# \bind "M-4" "math-insert \\Square"
+
+\bind "M-q equal" "math-insert \\equiv"
+# \bind "M-equal" "math-insert \\equiv"
+
+\bind "C-S-plus" "math-insert \\approx"
+# \bind "C-S-plus" "math-insert \\neq"
+
+\bind "M-q Up" "math-insert \\uparrow"
+# \bind "M-Up" "math-insert \\uparrow"
+
+\bind "M-q Down" "math-insert \\downarrow"
+# \bind "M-Down" "math-insert \\downarrow"
+
+\bind "M-q Right" "math-insert \\rightarrow"
+\bind "M-slash" "math-insert \\rightarrow"
+# \bind "M-Right" "math-insert \\rightarrow"
+# \bind "M-slash" "math-insert \\cdots"
+
+\bind "M-k period" "math-insert \\leftarrow"
+\bind "M-q Left" "math-insert \\leftarrow"
+# \bind "M-Left" "math-insert \\leftarrow"
+
+\bind "M-k slash" "math-insert \\rightarrow"
+# \bind "M-Right" "math-insert \\rightarrow"
+\bind "C-M-slash" "math-insert \\iff"
+# \bind "C-M-slash" "math-insert \\ddots"
+
+\bind "M-q S-Left" "math-insert \\Leftarrow"
+\bind "C-M-Left" "math-insert \\Leftarrow"
+# \bind "C-Left" "math-insert \\Leftarrow"
+# \bind "C-M-Left" "depth-increment"
+
+\bind "M-q S-Right" "math-insert \\Rightarrow"
+\bind "C-M-Right" "math-insert \\Rightarrow"
+# \bind "C-Right" "math-insert \\Rightarrow"
+# \bind "C-M-Right" "depth-decrement"
+
+\bind "C-Up" "char-backward"
+# \bind "C-Up" "math-insert \\Uparrow"
+
+\bind "M-q C-s" "math-insert \\Im"
+\bind "M-q h s" "math-insert \\sinh"
+# \bind "M-q C-s" "math-insert \\sinh"
+
+\bind "M-q h c" "math-insert \\cosh"
+# \bind "M-q C-c" "math-insert \\cosh"
+
+\bind "M-q h t" "math-insert \\tanh"
+# \bind "M-q C-t" "math-insert \\tanh"
+
+\bind "M-q S-n" "math-insert \\log_{10}"
+# \bind "M-q S-n" "math-insert \\log"
+
+\bind "M-q y" "math-insert \\det"
+\bind "M-q d" "command-sequence math-insert \\frac{d}{d}; line-end"
+# \bind "M-q d" "math-insert \\det"
+
+\bind "M-q M-d" "command-sequence math-insert \\frac{\\partial}{\\partial}; line-end"
+# \bind "M-q M-d" "math-insert \\dim"
+
+\bind "M-q l" "command-sequence math-insert \\lim; math-subscript;"
+# \bind "M-q l" "math-insert \\MKlcm"
+
+\bind "M-k g" "math-insert \\gcd"
+# \bind "M-q g" "math-insert \\gcd"
+
+\bind "M-k d" "math-insert \\deg"
+# \bind "M-q S-d" "math-insert \\deg"
+
+\bind "C-S-v" "math-insert \\vdots"
+# \bind "C-S-v" "clipboard-paste-simple"
+
+### letters ###
+\bind "M-m S-quotedbl" "math-insert \\alpha"
+# \bind "M-w a" "math-insert \\alpha"
+
+\bind "M-g S-q" "math-insert \\vartheta"
+# \bind "M-w M-v" "math-insert \\vartheta"
+
+\bind "M-w S-e" "math-insert \\epsilon"
+# \bind "M-w M-e" "math-insert \\epsilon"
+
+\bind "M-w S-i" "math-insert \\iota"
+# \bind "M-w i" "math-insert \\iota"
+
+\bind "M-w S-r" "math-insert \\varrho"
+# \bind "M-w M-r" "math-insert \\varrho"
+
+\bind "M-w q" "math-insert \\vartheta"
+# \bind "M-w M-v" "math-insert \\vartheta"
+
+\bind "M-e S-t" "math-insert \\varsigma"
+# \bind "M-e S-t" "layout Theorem*"
+
+\bind "M-m u" "command-sequence math-insert \\sum; math-superscript; cell-backward; math-subscript;"
+# \bind "M-m u" "command-sequence math-delim ( ); escape;  math-superscript; math-insert \\infty; escape; math-subscript; math-insert n=1; escape; char-backward; char-backward"
+
+\bind "M-backslash M-apostrophe" "command-sequence math-superscript; math-insert \\prime; escape"
+# \bind "M-apostrophe" "command-sequence math-superscript; math-insert \\prime; escape"
+
+\bind "C-M-equal" "command-sequence math-insert \\stackrel{}{=}; math-subscript; math-insert \\text{}"
+# \bind "C-M-equal" "math-insert \\pm"
+
+### retroactive ###
+
+
+##### SMALL DIFFERENCES #####
+
+### menus ###
+\bind "M-e r" "command-sequence layout Proof; line-begin; space-insert normal; paragraph-break; layout Itemize; depth-increment; math-insert \\Leftarrow; escape; paragraph-break; depth-increment; space-insert normal; line-end; paragraph-break; depth-decrement; math-insert \\Rightarrow; escape; up; line-begin; char-delete-forward confirm ; line-end;"
+# \bind "M-e r" "command-sequence layout Proof; line-begin; space-insert normal; paragraph-break; layout Itemize; depth-increment; math-insert \\Leftarrow; escape; paragraph-break; depth-increment; space-insert normal; line-end; paragraph-break; depth-decrement; math-insert \\Rightarrow; escape; up; line-begin; char-delete-forward confirm ; line-end; up; escape; newline-insert newline"
+
+\bind "M-p n" "layout Enumerate-Resume"
+# \bind "M-p n" "layout Enumerate"
+
+### environments ###
+\bind "C-S-less" "math-insert \\left\\langle \\right\\rangle"
+\bind "C-comma" "math-delim langle rangle"
+\bind "M-S-less" "math-delim langle |"
+\bind "M-S-greater" "math-delim | rangle"
+# \bind "C-S-less" "math-delim < >"
+# \bind "C-comma" "math-delim < >"
+# \bind "M-S-less" "math-delim < |"
+# \bind "M-S-greater" "math-delim | >"
+
+\bind "M-r r" "command-sequence textstyle-update color 3 language ignore; dialog-show-new-inset ref"
+# \bind "M-r r" "dialog-show-new-inset ref"
+
+\bind "M-r k" "command-sequence textstyle-update color 3 language ignore; font-underline; href-insert"
+# \bind "M-r k" "href-insert"
+
+\bind "M-backslash backslash" "command-sequence textstyle-update color 9; char-backward; char-delete-backward confirm; char-delete-backward confirm; char-delete-backward confirm; char-delete-backward confirm; space-insert normal; char-forward; math-insert \\backslash"
+# \bind "M-backslash backslash" "command-sequence textstyle-update family 16 series 2 shape 4 size 12 color 7 language ignore; space-insert normal; math-insert \\backslash"
+
+### retroactive ###
+\bind "M-d comma" "command-sequence char-left-select; math-delim langle |"
+\bind "M-d M-period" "command-sequence char-left-select; math-delim | rangle"
+# \bind "M-d comma" "command-sequence char-left-select; math-delim < |"
+# \bind "M-d M-period" "command-sequence char-left-select; math-delim | >"
+
+\bind "M-d M-equal" "command-sequence char-left-select; math-insert \\stackrel"
+# \bind "M-d M-equal" "command-sequence char-left-select; math-insert \\overset; math-insert \\text"
+
+\bind "M-d v" "command-sequence char-left-select; math-insert \\bar"
+# \bind "M-d v" "command-sequence char-left-select; math-insert \\vec"
+
+\bind "M-d c" "command-sequence char-left-select; math-insert \\cancel"
+# \bind "M-d c" "command-sequence word-left-select; math-insert \\cancel"
+
+\bind "M-d z" "command-sequence char-left-select; math-insert \\ddot"
+# \bind "M-d M-period" "command-sequence char-left-select; math-insert \\ddot"
+
+\bind "M-d m" "command-sequence char-left-select; math-insert \\tilde"
+# \bind "M-d grave" "command-sequence char-left-select; math-insert \\tilde"
+
+\bind "M-d f" "command-sequence word-left-select; math-insert \\frac"
+# \bind "M-d f" "command-sequence char-left-select; math-insert \\frac"
+
+\bind "M-d r" "command-sequence word-left-select; math-insert \\root"
+# \bind "M-d r" "command-sequence char-left-select; math-insert \\root"
+
+\bind "M-d i" "command-sequence word-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert \\ni; word-forward"
+# \bind "M-d i" "command-sequence char-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert \\ni; word-forward"
+
+\bind "M-d M-S-b" "command-sequence word-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert \\subsetneq; word-forward"
+# \bind "M-d M-S-b" "command-sequence char-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert \\subsetneq; word-forward"
+
+\bind "M-d equal" "command-sequence word-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert =; word-forward"
+# \bind "M-d equal" "command-sequence char-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert =; word-forward"
+
+\bind "M-d S-less" "command-sequence word-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert >; word-forward"
+# \bind "M-d S-less" "command-sequence char-left-select; cut; char-delete-backward confirm; line-begin; paste; math-insert >; word-forward"
+
+
+
+
